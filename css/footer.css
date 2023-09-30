@@ -1,0 +1,30 @@
+.logo {
+  margin-bottom: 1.5rem;
+  max-width: 15rem;
+  height: auto;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  gap: 2.8rem;
+  color: var(--title-color);
+}
+
+.footer__links li {
+  list-style: none;
+}
+
+.footer {
+  margin-top: 2rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  margin: 2.5rem 0;
+  color: #606060;
+}

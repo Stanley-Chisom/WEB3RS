@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
+
+@import url(navbar.css);
+@import url(home.css);
+@import url(about.css);
+@import url(offers.css);
+@import url(values.css);
+@import url(toolbox.css);
+@import url(projects.css);
+@import url(footer.css);
+
+:root {
+  --body-font: "Poppins", sans-serif;
+  --second-font: "Rubik", sans-serif;
+  --logo-font: "Rubik Iso", cursive;
+  --biggest-font-size: 2.75rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.9rem;
+  --smaller-font-size: 0.75rem;
+  --title-color: hsl(0, 0%, 92%);
+  --main-color: #715df5;
+  --card-color: #1e1d23;
+  --card-color-2: #3f2392;
+  --rwd-width1: 50rem;
+  --rwd-width2: 56.25rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--second-font);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0e0e0e;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: #3b3b3b;
+}
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: #8066e9;
+  padding: 0.8rem;
+  display: inline-flex;
+  color: var(--title-color);
+  font: 1.5rem;
+  border-radius: 0.2rem;
+  transition: bottom 0.4s, transform 0.4s;
+}
+
+.scrollup:hover {
+  transform: translateY(-0.25rem);
+}
+
+.show-scroll {
+  bottom: 3rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .home__content {
+    width: var(--rwd-width1);
+    margin: 8rem 20%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home__content-text h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin: 5rem auto 2rem auto;
+  }
+
+  .small {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .home__content-text button {
+    width: 35%;
+    margin: 1rem 35%;
+    padding: 1.6rem;
+    font-size: 1.9rem;
+  }
+  .circle2 {
+    left: 5rem;
+    top: -20rem;
+    filter: blur(90px);
+  }
+
+  .portfolio-line {
+    width: var(--rwd-width2);
+    margin: 5rem;
+  }
+
+  .portfolio-line h4 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  /* .partner__container {
+    width: 60rem  ;
+    margin: 0 1.5rem;
+    background: var(--title-color);
+  } */
+
+  .partner_logos {
+    padding: 0 25vw;
+    margin: 0 25rem;
+  }
+
+  .about {
+    width: var(--rwd-width2);
+    margin: 0 20%;
+  }
+
+  .about__content-text p {
+    font-size: 2rem;
+    font-weight: normal;
+    width: 50ch;
+    padding: 2vw;
+  }
+
+  .btn {
+    width: 50%;
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  .about__content-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    margin: 0 auto;
+  }
+
+  .about__content-img img {
+    margin: 4rem auto 0 0;
+    max-width: 90rem;
+  }
+
+  .about__content-text p {
+    font-size: 1.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .about__subheading h2 span {
+    font-size: 6rem;
+  }
+
+  .about__subheading h2 {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .container {
+    width: max-content;
+    margin: 50% 10rem;
+  }
+
+  .heading {
+    font-size: 5.5rem;
+    font-weight: 500;
+  }
+
+  .review-profile h2 {
+    font-size: 3rem;
+  }
+
+  .review-box .values_icon {
+    font-size: 2.5rem;
+  }
+
+  .review-box .review-text {
+    font-size: 1.35rem;
+    line-height: 4ch;
+  }
+
+  .projects-content {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+  }
+
+  .projects_box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    gap: 1.2rem;
+  }
+
+  .project-box {
+    margin-top: 2rem;
+  }
+
+  .project-box h2 {
+    font-size: 6rem;
+    font-weight: 800;
+  }
+
+  .project-box span {
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+
+  .offers {
+    width: var(--rwd-width1);
+    margin: 5rem 20%;
+  }
+
+  .offers h2 {
+    font-size: 5.5rem;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .offers-box {
+    padding: 5rem;
+    margin-left: 7rem;
+    width: 80%;
+    height: 40rem;
+  }
+
+  .offers-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 3rem;
+  }
+
+  .textcon {
+    margin-top: 5rem;
+  }
+
+  .offers-box h3 {
+    font-size: 2.65rem;
+    font-weight: normal;
+    margin-top: 5rem;
+  }
+
+  .offers_icon {
+    font-size: 10rem;
+  }
+
+  .projects {
+    width: var(--rwd-width1);
+    margin: 3rem 20%;
+  }
+
+  .projects h2 {
+    font-size: 5.5rem;
+    font-weight: 500;
+    margin-left: 2.2rem;
+  }
+
+  .toolbox {
+    width: var(--rwd-width2);
+    margin: 3rem 20%;
+  }
+
+  .tool_img {
+    max-width: 100%;
+  }
+
+  .footer {
+    width: var(--rwd-width2);
+    margin: 0 20%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .home__content {
+    width: 80rem;
+    margin: 6rem auto;
+    padding: 0 5rem;
+  }
+
+  .home__content .btn {
+    width: 60%;
+    font-size: 1.6rem;
+  }
+
+  .home__content-text h1 {
+    font-size: 4rem;
+  }
+
+  .home__content img {
+    max-width: 40%;
+    height: auto;
+  }
+
+  .portfolio-line {
+    width: var(--rwd-width2);
+    margin: 0 15rem;
+  }
+
+  .portfolio-line h4 {
+    font-size: 2.9rem;
+    font-weight: normal;
+  }
+
+  .partner_logos {
+    width: var(--rwd-width2);
+    margin: 5.5rem 13rem;
+  }
+
+  .logo {
+    max-width: 20rem;
+  }
+
+  .about {
+    width: var(--rwd-width2);
+    margin: 0 1.3rem;
+  }
+
+  .about__content-container {
+    width: 60rem;
+    margin: 5rem 10rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .about__content-text p {
+    width: 35rem;
+  }
+
+  .btn {
+    width: 50%;
+    padding: 0.9rem;
+    font-size: 1.5rem;
+  }
+
+  .container {
+    width: 80rem;
+    margin: 10rem 49%;
+  }
+
+  .heading {
+    font-size: 5.5rem;
+    font-weight: 500;
+  }
+
+  .review-profile h2 {
+    font-size: 3rem;
+  }
+
+  .review-box .values_icon {
+    font-size: 2.5rem;
+  }
+
+  .review-box .review-text {
+    font-size: 1.35rem;
+    line-height: 4ch;
+  }
+
+  .projects-content {
+    width: 80rem;
+    margin-left: 2.5rem;
+    display: flex;
+    padding: 2rem;
+  }
+
+  .about h2 span {
+    font-size: 5rem;
+  }
+
+  .about h2 {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .projects_box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1.2rem;
+  }
+
+  .project-box {
+    margin-top: 2rem;
+  }
+
+  .project-box h2 {
+    font-size: 5.5rem;
+    font-weight: 500;
+  }
+
+  .project-box span {
+    font-size: 1.5rem;
+  }
+
+  .offers {
+    width: 80rem;
+    margin: 5rem 10%;
+  }
+
+  .offers h2 {
+    font-size: 5.5rem;
+    font-weight: 500;
+  }
+
+  .offers-box {
+    padding: 5rem;
+    margin-left: 7rem;
+    width: 80%;
+    height: 40rem;
+  }
+
+  .offers-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 3rem;
+  }
+
+  .textcon {
+    margin-top: 5rem;
+  }
+
+  .offers-box h3 {
+    font-size: 2.65rem;
+    font-weight: normal;
+    margin-top: 5rem;
+  }
+
+  .offers_icon {
+    font-size: 10rem;
+  }
+
+  .projects {
+    width: var(--rwd-width1);
+    margin: 3rem 15%;
+  }
+
+  .projects h2 {
+    font-size: 5.5rem;
+    font-weight: 500;
+    margin-left: 2.2rem;
+  }
+
+  .toolbox {
+    width: var(--rwd-width2);
+    margin: 3rem 8%;
+  }
+
+  .tool_img {
+    max-width: 100%;
+  }
+
+  .footer {
+    width: var(--rwd-width2);
+    margin: 0 auto;
+  }
+}
+

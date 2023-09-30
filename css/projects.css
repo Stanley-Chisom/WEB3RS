@@ -1,0 +1,30 @@
+.projects_box {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  padding-block: 2rem;
+  gap: 1rem;
+  margin: 0 auto;
+  width: min(95%, 70rem);
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  transition: 0.5s all cubic-bezier(0.75, 0.82, 0.165, 1);
+}
+
+.projects h2 {
+  text-align: center;
+  margin: 15rem 0 5rem 0;
+  color: var(--title-color);
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.project:hover {
+  filter: blur(3px);
+  cursor: pointer;
+  transition: 0.5s all cubic-bezier(0.75, 0.82, 0.165, 1);
+}

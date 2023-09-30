@@ -1,0 +1,37 @@
+.toolbox h2 {
+  text-align: center;
+  color: var(--title-color);
+  margin: 10rem 0 4rem 0;
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.toolbox_tools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 45rem;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.tool_img {
+  border: 2px solid #232323;
+  border-radius: 0.2rem;
+  padding: 2rem;
+  max-width: 80%;
+  height: auto;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.tool_img:hover {
+  filter: none;
+  cursor: pointer;
+  transform: scale(1.1);
+  filter: blur(1.5px);
+  transform: translateY(-0.35rem);
+}
