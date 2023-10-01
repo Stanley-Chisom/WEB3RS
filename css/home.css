@@ -1,5 +1,5 @@
 .home__container {
-  margin-top: 6%;
+  margin: 5.5% 0;
   padding: 0 2.8em;
 }
 
@@ -11,22 +11,19 @@
 }
 
 .home__content h1 {
-  font-weight: normal;
+  margin-top: 6rem;
+  font-weight: 500;
   color: var(--title-color);
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 4rem);
 }
 
 .home__content span {
   color: #5d5cde;
 }
 
-.home__content img,
-h1 {
-  margin-top: 5rem;
-}
-
 .home__content img {
-  max-width: 70%;
+  max-width: 40%;
+  margin-top: 5rem;
 }
 
 .small {
@@ -89,6 +86,7 @@ h1 {
 
 .portfolio__content-container {
   width: 80%;
+  border-radius: .5rem;
   margin: 0 auto;
   background: var(--title-color);
 }
