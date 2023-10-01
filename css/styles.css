@@ -119,20 +119,21 @@ body {
     font-weight: normal;
   }
 
-  /* .partner__container {
-    width: 60rem  ;
-    margin: 0 1.5rem;
+  .portfolio__content-container {
     background: var(--title-color);
-  } */
+    width: 65rem;
+    min-height: 10rem;
+    margin-bottom: 2rem;
+  }
 
   .partner_logos {
-    padding: 0 25vw;
+    padding: 0 8rem;
     margin: 0 25rem;
   }
 
   .about {
     width: var(--rwd-width2);
-    margin: 0 20%;
+    margin: 10rem 20%;
   }
 
   .about__content-text p {
@@ -144,7 +145,7 @@ body {
 
   .btn {
     width: 50%;
-    padding: 2rem;
+    padding: 1.5rem;
     font-size: 2rem;
   }
 
@@ -161,8 +162,11 @@ body {
   }
 
   .about__content-text p {
-    font-size: 1.5rem;
-    margin-right: 2.5rem;
+    font-size: 1.7rem;
+  }
+
+  .about__content-text .btn {
+    width: 25rem;
   }
 
   .about__subheading h2 span {
@@ -228,7 +232,7 @@ body {
 
   .offers {
     width: var(--rwd-width1);
-    margin: 5rem 20%;
+    margin: 5rem 25%;
   }
 
   .offers h2 {
@@ -242,6 +246,13 @@ body {
     margin-left: 7rem;
     width: 80%;
     height: 40rem;
+  }
+
+  .offers__btn .btn{
+    width: 25rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    margin: 2rem -25%;
   }
 
   .offers-content {
@@ -291,24 +302,27 @@ body {
   }
 }
 
+
+
 @media (min-width: 600px) and (max-width: 1024px) {
   .home__content {
-    width: 80rem;
+    width: 90rem;
     margin: 6rem auto;
     padding: 0 5rem;
   }
 
   .home__content .btn {
     width: 60%;
-    font-size: 1.6rem;
+    padding: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .home__content-text h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .home__content img {
-    max-width: 40%;
+    max-width: 60%;
     height: auto;
   }
 
@@ -320,6 +334,13 @@ body {
   .portfolio-line h4 {
     font-size: 2.9rem;
     font-weight: normal;
+  }
+
+  .portfolio__content-container {
+    background: var(--title-color);
+    width: 85rem;
+    min-height: 10rem;
+   margin: 0 5rem;
   }
 
   .partner_logos {
@@ -336,15 +357,33 @@ body {
     margin: 0 1.3rem;
   }
 
+  .about h3 {
+    font-size: 5rem;
+    margin-left: 30rem;
+  }
+
   .about__content-container {
-    width: 60rem;
-    margin: 5rem 10rem;
+    width: 90rem;
+    min-height: 30rem;
+    margin: 5rem 2rem;
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .about__content-container .btn {
+    width: 30rem;
+    padding: 1.8rem;
+    font-size: 1.8rem;
+  }
+
+  .about__content-img img {
+    max-width: 100%;
   }
 
   .about__content-text p {
-    width: 35rem;
+    width: 55ch;
+    font-size: 2rem;
   }
 
   .btn {
@@ -354,8 +393,8 @@ body {
   }
 
   .container {
-    width: 80rem;
-    margin: 10rem 49%;
+    width: 90rem;
+    margin: 10rem 25rem;
   }
 
   .heading {
@@ -372,23 +411,22 @@ body {
   }
 
   .review-box .review-text {
-    font-size: 1.35rem;
+    font-size: 1.39rem;
     line-height: 4ch;
   }
 
   .projects-content {
-    width: 80rem;
+    width: 90rem;
     margin-left: 2.5rem;
     display: flex;
     padding: 2rem;
   }
 
   .about h2 span {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 
   .about h2 {
-    text-align: center;
     font-size: 4rem;
   }
 
@@ -404,16 +442,16 @@ body {
   }
 
   .project-box h2 {
-    font-size: 5.5rem;
+    font-size: 8rem;
     font-weight: 500;
   }
 
   .project-box span {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .offers {
-    width: 80rem;
+    width: 90rem;
     margin: 5rem 10%;
   }
 
@@ -427,6 +465,16 @@ body {
     margin-left: 7rem;
     width: 80%;
     height: 40rem;
+  }
+
+  .offers__btn {
+    margin: 0 28%;
+  }
+
+  .offers-content .btn {
+    width: 40rem;
+    padding: 2rem;
+    font-size: 1.9rem;
   }
 
   .offers-content {
@@ -451,8 +499,8 @@ body {
   }
 
   .projects {
-    width: var(--rwd-width1);
-    margin: 3rem 15%;
+    width: 90rem;
+    margin: 3rem 10%;
   }
 
   .projects h2 {
@@ -462,7 +510,7 @@ body {
   }
 
   .toolbox {
-    width: var(--rwd-width2);
+    width: 90rem;
     margin: 3rem 8%;
   }
 
@@ -471,8 +519,9 @@ body {
   }
 
   .footer {
-    width: var(--rwd-width2);
-    margin: 0 auto;
+    width: 90rem;
+    margin: 0 10%;
   }
 }
+
 

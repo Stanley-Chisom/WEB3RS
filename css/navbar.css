@@ -1,7 +1,7 @@
 .navbar a {
   color: #fff;
   margin: 0 1.5rem;
-  font-size: var(--small-font-size);
+  font-size: 1rem;
   font-family: var(--second-font);
   text-decoration: none;
 }
