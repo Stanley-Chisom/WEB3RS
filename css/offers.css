@@ -1,6 +1,6 @@
 .offers {
   width: 80%;
-  margin: 8% auto;
+  margin: 20% auto;
 }
 
 .offers_icon {
@@ -24,7 +24,7 @@
 }
 
 .offers__btn {
-  margin: 0 70%;
+  margin: 0 75%;
 }
 
 .offers__btn .btn {
