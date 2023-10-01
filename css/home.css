@@ -87,16 +87,11 @@ h1 {
   gap: 5rem;
 }
 
-.portfolio__content-container { 
+.portfolio__content-container {
   width: 80%;
   margin: 0 auto;
   background: var(--title-color);
 }
-
-/* .logo {
-  margin: 1rem 0;
-  width: 10rem;
-} */
 
 .logo:nth-child(4) {
   height: 8rem;

@@ -80,7 +80,7 @@ body {
 @media only screen and (max-width: 600px) {
   .home__content {
     width: var(--rwd-width1);
-    margin: 8rem 20%;
+    margin: 8rem 30%;
     display: flex;
     flex-direction: column;
   }
@@ -123,7 +123,7 @@ body {
     background: var(--title-color);
     width: 65rem;
     min-height: 10rem;
-    margin-bottom: 2rem;
+    margin: 0 0.5rem;
   }
 
   .partner_logos {
@@ -132,8 +132,8 @@ body {
   }
 
   .about {
-    width: var(--rwd-width2);
-    margin: 10rem 20%;
+    width: var(--rwd-width1);
+    margin: 10rem 40%;
   }
 
   .about__content-text p {
@@ -232,7 +232,7 @@ body {
 
   .offers {
     width: var(--rwd-width1);
-    margin: 5rem 25%;
+    margin: 5rem 30%;
   }
 
   .offers h2 {
@@ -248,11 +248,9 @@ body {
     height: 40rem;
   }
 
-  .offers__btn .btn{
-    width: 25rem;
+  .offers__btn .btn {
     padding: 2rem;
-    font-size: 1.5rem;
-    margin: 2rem -25%;
+    font-size: 1.7rem;
   }
 
   .offers-content {
@@ -289,7 +287,7 @@ body {
 
   .toolbox {
     width: var(--rwd-width2);
-    margin: 3rem 20%;
+    margin: 3rem 25%;
   }
 
   .tool_img {
@@ -298,11 +296,9 @@ body {
 
   .footer {
     width: var(--rwd-width2);
-    margin: 0 20%;
+    margin: 0 25%;
   }
 }
-
-
 
 @media (min-width: 600px) and (max-width: 1024px) {
   .home__content {
@@ -340,7 +336,7 @@ body {
     background: var(--title-color);
     width: 85rem;
     min-height: 10rem;
-   margin: 0 5rem;
+    margin: 0 5rem;
   }
 
   .partner_logos {
@@ -524,4 +520,6 @@ body {
   }
 }
 
-
+@media (width >= 1024px) {
+  
+}
