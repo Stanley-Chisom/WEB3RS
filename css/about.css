@@ -8,14 +8,13 @@
   justify-content: center;
   padding: 0 10rem;
   margin: 5rem auto;
-  gap: 2.5rem;
+  gap: 5rem;
 }
 
 .about__content-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60ch;
 }
 
 .about__content-img img {
@@ -35,7 +34,7 @@
   margin: 1.5rem 0;
   line-height: 2.5;
   font-size: 1.1rem;
-  text-align: center;
+  width: 50ch;
   color: var(--title-color);
 }
 

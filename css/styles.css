@@ -78,29 +78,39 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .logo-header {
+    max-width: 50%;
+  }
   .home__content {
-    width: var(--rwd-width1);
-    margin: 8rem 30%;
+    width: var(--rwd-width2);
+    margin: 15rem 45%;
     display: flex;
     flex-direction: column;
   }
 
   .home__content-text h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 6rem;
+    font-weight: 600;
     margin: 5rem auto 2rem auto;
+    line-height: 1.5;
+
+  }
+
+  .home__content img {
+    display: none;
   }
 
   .small {
     text-align: center;
     margin-bottom: 1.5rem;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .home__content-text button {
-    width: 35%;
-    margin: 1rem 35%;
-    padding: 1.6rem;
-    font-size: 1.9rem;
+    width: 40%;
+    margin: 1rem 30%;
+    padding: 1.5rem;
+    font-size: 2rem;
   }
   .circle2 {
     left: 5rem;
@@ -121,9 +131,9 @@ body {
 
   .portfolio__content-container {
     background: var(--title-color);
-    width: 65rem;
+    width: 70rem;
     min-height: 10rem;
-    margin: 0 0.5rem;
+    margin: 0 5%;
   }
 
   .partner_logos {
@@ -133,14 +143,20 @@ body {
 
   .about {
     width: var(--rwd-width1);
-    margin: 10rem 40%;
+    margin: 10rem 57%;
   }
 
   .about__content-text p {
+    width: 55ch;
+    font-weight: 500;
     font-size: 2rem;
-    font-weight: normal;
-    width: 50ch;
-    padding: 2vw;
+    text-align: center;
+  }
+
+  .about__content-img img{
+   width: 60rem;
+   border-radius: 1rem;
+   margin: 0 auto;
   }
 
   .btn {
@@ -159,10 +175,6 @@ body {
   .about__content-img img {
     margin: 4rem auto 0 0;
     max-width: 90rem;
-  }
-
-  .about__content-text p {
-    font-size: 1.7rem;
   }
 
   .about__content-text .btn {
@@ -231,8 +243,8 @@ body {
   }
 
   .offers {
-    width: var(--rwd-width1);
-    margin: 5rem 30%;
+    width: 70rem;
+    margin: 5rem 10%;
   }
 
   .offers h2 {
@@ -275,7 +287,7 @@ body {
   }
 
   .projects {
-    width: var(--rwd-width1);
+    width: var(--rwd-width2);
     margin: 3rem 20%;
   }
 
